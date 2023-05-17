@@ -22,7 +22,7 @@
 
   <style>
     .bg-img {
-      background-image: url('images/main picture.jpg');
+      background-image: url('./images/Lasha-imgs/Greens-Gallery/lasha_411.jpg');
       height: 100vh;
       position: relative;
       background-position: center;
@@ -34,57 +34,65 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img class="img-responsive" src="images/img/Lasha-1 green big.png" alt="Logo">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+    <div class="container" data-aos="fade-up" data-aos-delay="900">
+      <a class="navbar-brand" href="#">
+        <div class="logo-container">
+          <img src="./images/img/Lasha-barn-white.png" alt="Lasha Barn Logo">
+
+        </div>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link" href="#">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="store.html">Store</a>
+            <a class="nav-link" href="#">Factories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="factories.html">Factories</a>
+            <a class="nav-link" href="#">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="team.html">Team</a>
+            <a class="nav-link" href="#">Partners</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partners.html">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
+        <form class="d-flex mb-3" role="search">
+          <input class="form-control me-2 bg-transparent" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
-
     </div>
-    <!-- /container -->
-
   </nav>
-  <!-- /Navbar -->
-
 
   <!-- Main content -->
   <!-- background image -->
   <div class="bg-img" data-aos="fade-up">
     <div class="overlay">
-      <!-- Home page content -->
-      <div class="container " data-aos="fade-up" data-aos-delay="300">
-        <img class="align-items-center" src="./images/img/Lasha-1.png" alt="Bootstrap" width="100%">
 
+      <!-- Home page content -->
+      <div class="head-logo">
+        <img src="./images/img/Lasha-1.png" alt="Logo" data-aos="fade-up">
+        <div class="home-page-content" data-aos="fade-up" data-aos-delay="500">
+          <h5 class="text-center .home-page-text pt-4">Bringing you the freshest produce in the Zimbabwe</h5>
+
+          <div class="home-buttons text-center pt-1">
+            <a href="services.html">
+              <button class="btn btn-outline-light rounded-3 homepage-btn-1 btn-lg mt-2">Services</button>
+            </a>
+          </div>
+        </div>
       </div>
       <!-- /Home page content -->
     </div>
-    <!-- /bg-img -->
+    <!-- /background image -->
 
   </div>
   <!-- /view -->
@@ -96,16 +104,7 @@
   <section class="pb-0 footer-bottom" data-aos="fade-up">
     <footer>
       <div class="container footer-top">
-        <div class="home-page-content">
-          <hr>
-          <h1 class="text-center font-weight-bolder">Bringing you the freshest produce in the Zimbabwe</h1>
 
-          <div class="home-buttons text-center fadeIn">
-            <a href="services.html">
-              <div class="btn homepage-btn-1 btn-lg mt-2">Services</div>
-            </a>
-          </div>
-        </div>
         <hr>
         <div class="row justify-content-between" data-aos="fade-up" data-aos-delay="300">
 

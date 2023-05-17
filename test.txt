@@ -1,0 +1,94 @@
+<!--NAV-->
+  <nav class="navbar navbar-expand-lg navbar-dark" id="test">
+    <div class="container">
+      <!--TODO: decrease font weight of span-->
+      <a class="navbar-brand" href="index.html">
+        <img class="img-responsive" src="images/img/Lasha-1 green big.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-lg-4">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qualifications">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <!--I want to make sure only the price list opens a new tab -->
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="social-links ms-auto">
+          <!--TODO: Create accounts for twitter and patreon-->
+          <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-instagram-fill"></i></a>
+          <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#phone"><i class="ri-whatsapp-fill"></i></a>
+          <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-twitter-fill"></i></a>
+          <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-patreon-fill"></i></a>
+        </div>
+        <!-- TODO: THIS IS THE SEARCH BAR 
+
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar 
+  <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-responsive" src="images/img/Lasha-1 green big.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="factories.html">Factories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+     /container 
+
+  </nav>
+   /Navbar -->

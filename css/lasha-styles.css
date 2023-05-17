@@ -10768,4 +10768,191 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 550;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #25d55f;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 9999;
+}
+.navbar a,
+.navbar input,
+.navbar button {
+  font-weight: 550;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: #25d55f;
+}
+.navbar .logo-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.navbar .navbar-brand img {
+  position: absolute;
+  width: 50px;
+  object-fit: cover;
+}
+.navbar .navbar-brand {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav .navbar-link {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar .navbar-toggler {
+  background-color: rgba(243, 252, 244, 0.137254902);
+  color: hsla(127, 60%, 97%, 0.6);
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(243, 252, 244, 0.600)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar .form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f8fff8;
+  opacity: 0.85;
+  font-weight: 525;
+}
+.navbar .social-links a {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+@media (max-width: 992px) {
+  .navbar .container {
+    background-color: rgba(243, 252, 244, 0.0941176471);
+    border-radius: 10px;
+  }
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.356);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.overlay img {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 60vw;
+  max-width: 800px;
+}
+.overlay .head-logo {
+  position: relative;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  display: grid;
+  width: 90vw;
+}
+
+.home-page-text {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-shadow: 2px 1px #1f1f1f;
+}
+
+.homepage-btn-1 {
+  color: white;
+  margin-left: 4px;
+  font-size: x-large;
+  font-weight: 575;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.homepage-btn-1:hover {
+  background: rgba(0, 0, 0, 0.4039215686);
+  color: #25d55f;
+  border-color: #25d55f;
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+  /* HOME section */
+  .home-page-content h5, .home-page-content .h5 {
+    font-size: 15px;
+  }
+  .home-buttons .homepage-btn-1,
+  .homepage-btn-2 {
+    font-size: 1rem;
+  }
+  /* Home section */
+  /* Store section */
+  .store-row-2 .col-sm-3,
+  .store-row-3 .col-sm-3 {
+    padding-bottom: 10px;
+  }
+  /* /Store section */
+  /* TEAM section */
+  .team-row .card-deck .card {
+    width: 400px;
+    height: inherit;
+  }
+  .team-row .card-deck .card .img-box {
+    width: 380px;
+    height: 380px;
+  }
+  .team-row .card-deck .card img {
+    width: 360px;
+    height: auto;
+  }
+}
+/* /TEAM Section */
+.footer-bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=lasha-styles.css.map */

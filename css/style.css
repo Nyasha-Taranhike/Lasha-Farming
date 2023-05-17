@@ -1,3 +1,4 @@
+/*
 .navbar {
   background-color: rgb(255, 255, 255, 0.2);
   padding: 0;
@@ -6,6 +7,9 @@
   height: 6rem;
   width: auto;
 }
+*/
+
+/*
 .navbar .navbar-toggler {
   border: none;
   outline: none;
@@ -18,28 +22,8 @@
   font-size: 1.2rem;
   padding-left: 1rem;
 }
-.overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.home-page-content {
-  /*padding-top: 12%; */
-}
+*/
 
-.home-page-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 4rem;
-  color: white;
-  text-shadow: 2px 1px #333333;
-}
 .home-subheading-text {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -51,19 +35,7 @@
   font-size: 1.3rem;
   color: black;
 }
-.homepage-btn-1 {
-  background: #25d55f;
-  color: white;
-  margin-left: 4px;
-  font-size: x-large;
-  font-weight: 600;
-  border-radius: 0.4rem;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.homepage-btn-1:hover {
-  background: #004d00;
-  color: white;
-}
+
 /* /Home page end */
 
 /* Store */
@@ -614,49 +586,3 @@
   height: 160px;
 }
 /* /CLIENTS Section */
-
-/* Small screens */
-@media (max-width: 576px) {
-  /* HOME section */
-  .home-page-content {
-    padding-top: 10rem;
-  }
-  .home-page-text {
-    font-size: 1.6rem;
-  }
-  .home-buttons .homepage-btn-1,
-  .homepage-btn-2 {
-    font-size: 1rem;
-  }
-  /* Home section */
-
-  /* Store section */
-  .store-row-2 .col-sm-3,
-  .store-row-3 .col-sm-3 {
-    padding-bottom: 10px;
-  }
-  /* /Store section */
-
-  /* TEAM section */
-  .team-row .card-deck .card {
-    width: 400px;
-    height: inherit;
-  }
-  .team-row .card-deck .card .img-box {
-    width: 380px;
-    height: 380px;
-  }
-  .team-row .card-deck .card img {
-    width: 360px;
-    height: auto;
-  }
-}
-/* /TEAM Section */
-
-.footer-bottom {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-}
