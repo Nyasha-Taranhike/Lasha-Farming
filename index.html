@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--TODO:
+          Pull all full stops in a span, and color the span green
+
+        Icons from:
+        <a href="https://www.flaticon.com/free-icons/meat" title="meat icons">Meat icons created by Freepik - Flaticon</a>
+        -->
 
 <head>
   <meta charset="utf-8" />
@@ -13,11 +19,22 @@
   <!--Fonts-->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!--TODO: Remove this style sheet-->
-  <link rel="stylesheet" href="./css/style.css">
+
+  <!--=============== HTML Page Icon ===============-->
+  <link rel="shortcut icon" href="images/img/Lasha-barn-white.png" type="image/x-icon">
+
+  <!--=============== BOXICONS (boxicon Animation)===============-->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!--=============== BOXICONS (icon version Animation)===============-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+  <!--==================== CSS ====================-->
   <link rel="stylesheet" href="./css/lasha-styles.css">
 
-
+  <!--jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
 
   <style>
@@ -34,6 +51,12 @@
 
 <body>
 
+  <!--==================== LOADER ====================-->
+  <div class="load" id="load">
+    <img src="images/test-imgs/loadcoffee.gif" alt="" class="load__gif">
+  </div>
+
+  <!--==================== HEADER ====================-->
   <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
     <div class="container" data-aos="fade-up" data-aos-delay="900">
       <a class="navbar-brand" href="#">
@@ -49,19 +72,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="#home">Home</a> <!--TODO: Reduce number of links-->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Factories</a>
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#premium">Specials</a> <!--Sales-->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Partners</a>
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
         <form class="d-flex mb-3" role="search">
@@ -72,78 +98,497 @@
     </div>
   </nav>
 
-  <!-- Main content -->
-  <!-- background image -->
-  <div class="bg-img" data-aos="fade-up">
-    <div class="overlay">
+  <!--==================== MAIN ====================-->
+  <main>
+    <!--==================== HOME ====================-->
+    <!-- background image -->
+    <div class="bg-img" data-aos="fade-up" id="home">
+      <div class="overlay">
 
-      <!-- Home page content -->
-      <div class="head-logo">
-        <img src="./images/img/Lasha-1.png" alt="Logo" data-aos="fade-up">
-        <div class="home-page-content" data-aos="fade-up" data-aos-delay="500">
-          <h5 class="text-center .home-page-text pt-4">Bringing you the freshest produce in the Zimbabwe</h5>
+        <!-- Home page content -->
+        <div class="head-logo">
+          <img src="./images/img/Lasha-1.png" alt="Logo" data-aos="fade-up">
+          <div class="home-page-content" data-aos="fade-up" data-aos-delay="500">
+            <h5 class="text-center .home-page-text pt-4">Bringing you the freshest produce in the Zimbabwe<span>.</span>
+            </h5>
 
-          <div class="home-buttons text-center pt-1">
-            <a href="services.html">
-              <button class="btn btn-outline-light rounded-3 homepage-btn-1 btn-lg mt-2">Services</button>
-            </a>
+            <div class="home-buttons text-center pt-1">
+              <a href="services.html">
+                <button
+                  class="btn btn-outline-light rounded-3 homepage-btn-1 btn-lg mt-2 button-scroll">Services</button>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- /Home page content -->
       </div>
-      <!-- /Home page content -->
+      <!-- /background image -->
+
     </div>
-    <!-- /background image -->
-
-  </div>
-  <!-- /view -->
-
-  <!-- /main content -->
 
 
+    <!--==================== ESPECIALTY ====================-->
+    <div class="specialty section containy" id="specialty">
+      <div class="specialty__container">
+        <div class="specialty__box">
+          <h2 class="section__title">
+            All the high quality products we offer!
+          </h2>
 
-  <section class="pb-0 footer-bottom" data-aos="fade-up">
-    <footer>
-      <div class="container footer-top">
-
-        <hr>
-        <div class="row justify-content-between" data-aos="fade-up" data-aos-delay="300">
-
-          <div class="col-auto">
-            <div>
-              <p class="mb-0">EMAIL</p>
-              <h2>makaita@gmail.com</h2>
-            </div>
-            <div class="mt-4">
-              <p id="phone" class="mb-0">PHONE</p>
-              <h2>+263 774 119 745</h2>
-            </div>
+          <div>
+            <a href="#" class="buttony specialty__button">See more</a>
           </div>
-          <div class="col-auto">
-            <h5 class="mb-3">Follow me on</h5>
-            <div class="social-links ms-auto">
-              <!--CHANGE NON FACENOOK LINKS TO THE RESPECTIVE LINKS-->
-              <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-facebook-fill"></i></a>
-              <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-twitter-fill"></i></a>
-              <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-github-fill"></i></a>
-              <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-google-fill"></i></a>
-              <a href="https://www.facebook.com/tmufasaphotography/"><i class="ri-youtube-fill"></i></a>
+        </div>
+
+        <div class="specialty__category">
+          <div class="specialty__group specialty__line">
+            <img src="./images/Lasha-imgs/icons/pig.png" alt="" class="specialty__img">
+
+            <h3 class="specialty__title">Selected Livestock</h3>
+            <p class="specialty__description">
+              Premium, Grass Fed pigs, goats and rabbits.
+            </p>
+          </div>
+
+          <div class="specialty__group specialty__line">
+            <img src="./images/Lasha-imgs/icons/egg-cracked.png" alt="" class="specialty__img">
+
+            <h3 class="specialty__title">Quality Eggs</h3>
+            <p class="specialty__description">
+              Organic and unproceeded chickens, chicks and eggs.
+            </p>
+          </div>
+
+          <div class="specialty__group">
+            <img src="./images/Lasha-imgs/icons/healthy-food.png" alt="" class="specialty__img">
+
+            <h3 class="specialty__title">Fresh Vegetables</h3>
+            <p class="specialty__description">
+              With all our products being organic, F&V are no exception.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="products section" id="products">
+      <div class="products__container containy">
+        <h2 class="section__title">
+          Choose our delicious and best products
+        </h2>
+
+        <ul class="products__filters">
+          <li class="products__item products__line active-product" data-filter=".delicacies">
+            <h3 class="products__title">Livestock</h3>
+            <span class="products__stock">4 animals</span>
+          </li>
+
+          <li class="products__item products__line" data-filter=".coffee">
+            <h3 class="products__title">Eggs +</h3>
+            <span class="products__stock">4 products</span>
+          </li>
+
+          <li class="products__item" data-filter=".cake">
+            <h3 class="products__title">Fruits And Vegetables</h3>
+            <span class="products__stock">4 products</span>
+          </li>
+        </ul>
+
+        <div class="products__content gridy">
+          <!--========== Delicaties ==========-->
+          <article class="products__card delicacies">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/pig-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$5</h2>
+              <h3 class="products__name">Pigs</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card delicacies">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/goat.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$6</h2>
+              <h3 class="products__name">Goats</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card delicacies">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/rabbit.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$4</h2>
+              <h3 class="products__name">Rabbits</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <!--========== Coffee ==========-->
+          <article class="products__card coffee">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/chicken.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$4</h2>
+              <h3 class="products__name">Chickens</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card coffee">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/eggs-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$7</h2>
+              <h3 class="products__name">Eggs</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card coffee">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/chicks.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$12</h2>
+              <h3 class="products__name">Chicks</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card coffee">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/piglet-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$9</h2>
+              <h3 class="products__name">Piglets</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <!--========== Cake ==========-->
+          <article class="products__card cake">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/tomatoes.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$12</h2>
+              <h3 class="products__name">Tomatoes</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+
+
+
+
+
+
+
+
+          <article class="products__card cake">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/Avocados-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$15</h2>
+              <h3 class="products__name">Avocados</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+
+
+
+
+          <article class="products__card cake">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/lettuce-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$6</h2>
+              <h3 class="products__name">Lettuce</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="products__card cake">
+            <div class="products__shape">
+              <img src="./images/Lasha-imgs/icons/maize-img.png" alt="" class="products__img">
+            </div>
+
+            <div class="products__data">
+              <h2 class="products__price">$5</h2>
+              <h3 class="products__name">Maize</h3>
+
+              <button class="buttony products__button">
+                <i class='bx bx-shopping-bag'></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALITY ====================-->
+    <section class="quality section" id="premium">
+      <div class="quality__container containy">
+        <h2 class="section__title">
+          We offer a premium and better quality preparation just for you!
+        </h2>
+
+        <div class="quality__content gridy">
+          <div class="quality__images">
+            <img src="./images/Lasha-imgs/Pigs/lasha_214.jpg" alt="" class="quality__img-big">
+            <img src="./images/Lasha-imgs/Pigs/lasha_233.jpg" alt="" class="quality__img-small">
+          </div>
+
+          <div class="quality__data">
+            <h1 class="quality__title">Butcher's Bundle</h1>
+            <h2 class="quality__price">$94.99</h2>
+            <span class="quality__special">New Price</span> <!--TODO: PUT "New" in a span and make green-->
+            <p class="quality__description">
+              We take care to make sure our animals are in the safest and healthiest environment.
+              To make sure you get
+              the best we are offering a bundle of pigs for a discounted price.
+            </p>
+
+            <div class="quality__buttons">
+              <button class="buttony">
+                Buy Now
+              </button>
+
+              <a href="#" class="quality__button">
+                See more
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="container footer-bottom" data-aos="fade-up" data-aos-delay="400">
-        <hr>
-        <div class="row justify-content-between">
-          <div class="col-auto">
-            <p class="mb-0">Copyright © All Rights Reserved Lasha</p>
-          </div>
-          <div class="col-auto">
-            <p class="mb-0">Shot and Designed by <a href="index.html#about">Tara Mufasa</a></p>
-          </div>
+    </section>
+
+    <!--==================== LOGOS ====================-->
+    <section class="logo section">
+
+
+
+      <div class="logo__container containy gridy">
+
+
+        <img src="./images/pick n pay.png" alt="" class="logo__img">
+        <img src="./images/carrgill.png" alt="" class="logo__img">
+        <img src="./images/monsato.png" alt="" class="logo__img">
+        <img src="./images/shoprite-logo-png-5.png" alt="" class="logo__img">
+        <img src="./images/spar supermarket logo.png" alt="" class="logo__img">
+      </div>
+
+      <div class="containy pt-4">
+        <h2 class="section__title ">
+          We supply to these companies
+        </h2>
+
+      </div>
+    </section>
+
+    <!--==================== BLOG ====================-->
+    <section class="blog section" id="blog">
+      <div class="blog__container containy">
+        <h2 class="section__title">
+          Visit our Blog for farming hacks and tips.
+        </h2>
+
+        <div class="blog__content gridy">
+          <article class="blog__card">
+            <div class="blog__image">
+              <img src="./images/Lasha-imgs/Greens-Gallery/lasha_362_blog.jpg" alt="" class="blog__img">
+              <a href="#" class="blog__button">
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+            </div>
+
+            <div class="blog__data">
+              <h2 class="blog__title">
+                10 Garden Recommendations
+              </h2>
+              <p class="blog__description">
+                Taking care of your garden can be challenging but we will show you
+                how to prepare, and finish with a good
+                garden.
+              </p>
+
+              <div class="blog__footer">
+                <div class="blog__reaction">
+                  <i class='bx bx-comment'></i>
+                  <span>12</span>
+                </div>
+                <div class="blog__reaction">
+                  <i class='bx bx-show'></i>
+                  <span>76,5K</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <div class="blog__image">
+              <img src="./images/Lasha-imgs/Puppies/lasha_420_blog.jpg" alt="" class="blog__img">
+              <a href="#" class="blog__button">
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+            </div>
+
+            <div class="blog__data">
+              <h2 class="blog__title">
+                12 Benefits Of Breading Dogs
+              </h2>
+              <p class="blog__description">
+                Dog ownership and farming have always gone hand in hand.
+                If trained effectively, dogs can be a valuable asset to
+                your farm.
+              </p>
+
+              <div class="blog__footer">
+                <div class="blog__reaction">
+                  <i class='bx bx-comment'></i>
+                  <span>45</span>
+                </div>
+                <div class="blog__reaction">
+                  <i class='bx bx-show'></i>
+                  <span>356,5K</span>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-    </footer>
-  </section>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer" id="contact">
+    <div class="footer__container containy">
+      <h1 class="footer__title">Contact<span>.</span></h1>
+
+      <div class="footer__content gridy">
+        <div class="footer__data">
+          <p class="footer__description">
+            Subscribe to our newsletter
+          </p>
+
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" class="footer__input">
+            <button class="footer__button">
+              <i class='bx bx-right-arrow-alt'></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Address</h2>
+          <p class="footer__information">
+            9876 Hacienda Av. <br>
+            Borrowdale, Harare, Zimbabwe
+            <img src="./images/Lasha-imgs/icons/zimflag.png" alt="" class="footer__flag">
+          </p>
+        </div>
+
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Contact</h2>
+          <p class="footer__information">
+            +987654321 <br>
+            lasha@email.com
+          </p>
+        </div>
+
+        <div class="footer__data">
+          <h2 class="footer__subtitle">Office</h2>
+          <p class="footer__information">
+            Monday - Saturday <br>
+            8am - 6pm
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__group">
+        <ul class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+            <i class='bx bxl-facebook'></i>
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+            <i class='bx bxl-instagram'></i>
+          </a>
+
+          <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+            <i class='bx bxl-twitter'></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Lasha. All rigths reserved
+        </span>
+        <span class="footer__copy">
+          Shot and Designed by <a href="">Tara Mufasa</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!--========== SCROLL UP ==========-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+  </a>
 
   <!--Animations-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -163,8 +608,11 @@
 
   <script src="./aos-master/src/js/app.js"></script>
 
-  <!--My JS TODO
-  <script src="./js/script.js"></script>-->
+  <!--Mixitup filter-->
+  <script src="./js/mixitup.min.js"></script>
+
+  <!--My JS file-->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
