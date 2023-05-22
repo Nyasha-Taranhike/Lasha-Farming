@@ -11000,10 +11000,12 @@ button {
 .overlay .homepage-btn-1 {
   color: #f8fff8;
   margin-left: 4px;
-  font-size: x-large;
   font-weight: 575;
-  border-radius: 0.4rem;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1.75rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
 }
 
 .homepage-btn-1:hover {
