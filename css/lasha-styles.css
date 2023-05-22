@@ -10944,11 +10944,19 @@ button {
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(243, 252, 244, 0.600)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.navbar form input,
+.navbar button {
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.25rem;
+  font-size: var(--normal-font-size);
+}
+.navbar form button {
+  text-transform: uppercase;
+}
 .navbar .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #f8fff8;
   opacity: 0.85;
-  font-weight: 525;
 }
 .navbar .social-links a {
   width: 36px;
